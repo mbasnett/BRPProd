@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Be-back Visits --></label>
+        <name>Be_back_Visits__c</name>
+    </fields>
+    <fields>
+        <label><!-- First-time visits --></label>
+        <name>First_time_visits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subdivision --></label>
+        <name>Subdivision__c</name>
+        <relationshipLabel><!-- Foot Traffic --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Traffic Date --></label>
+        <name>Traffic_Date__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Foot Traffic Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Foot Traffic</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Foot Traffic Entry Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

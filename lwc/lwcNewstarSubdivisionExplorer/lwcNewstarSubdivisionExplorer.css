@@ -1,0 +1,16 @@
+.item-list-container {
+    height:300px;
+}
+
+.banner-special-offer-text {
+    font-size:16px;
+}
+
+.banner-special-offer-disclaimer {
+    text-transform: uppercase;
+    font-size:xx-small;
+}
+
+.tab-search-container {
+    margin-top:-23px;
+}

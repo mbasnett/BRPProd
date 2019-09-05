@@ -1,0 +1,42 @@
+<template>
+
+
+    <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+        <p class="slds-text-heading_medium">
+            {opportunityName}
+        </p>
+    </div>
+
+    <template if:false={isAvailableForCloning}>
+        <div class="slds-grid slds-gutters slds-m-top_small">
+            <div class="slds-col slds-size_1-of-12">
+                <lightning-icon icon-name="utility:error" alternative-text="Error!" variant="error">
+                </lightning-icon>
+            </div>
+            <div class="slds-col slds-size_11-of-12">
+                This opportunity is currently in the {stageName} stage. New quotes cannot be created at this stage.
+            </div>
+
+        </div>
+    </template>
+
+
+    <template if:true={isAvailableForCloning}>
+        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+            <p>
+                Create a copy of this opportunity to use as a new quote/pricing scenario for comparison and estimation
+                purposes.
+            </p>
+            <lightning-input type="text" label="Scenario Name:" onchange={handleScenarioNameChange} required>
+            </lightning-input>
+            <lightning-button label="Create new quote opportunity" variant="brand" class="slds-m-top_small"
+                onclick={handleClone} disabled={isCloningDisabled}>
+            </lightning-button>
+
+
+        </div>
+    </template>
+
+
+
+</template>

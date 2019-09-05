@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aosokin@constellationhb.com</contactEmail>
+    <label>NSS</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost</callbackUrl>
+        <consumerKey>3MVG98EE59.VIHmwphpbDAEk38LgmPaf3Q3Na6Caotqlbc6sAx3JZkVdKO1iSrC1jmVY7kqh79KHmCqxgrfYq</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

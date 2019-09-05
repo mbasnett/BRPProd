@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>20-29</fullName>
+        <default>false</default>
+        <label>20-29</label>
+    </customValue>
+    <customValue>
+        <fullName>30-39</fullName>
+        <default>false</default>
+        <label>30-39</label>
+    </customValue>
+    <customValue>
+        <fullName>40-49</fullName>
+        <default>false</default>
+        <label>40-49</label>
+    </customValue>
+    <customValue>
+        <fullName>50-59</fullName>
+        <default>false</default>
+        <label>50-59</label>
+    </customValue>
+    <customValue>
+        <fullName>60-69</fullName>
+        <default>false</default>
+        <label>60-69</label>
+    </customValue>
+    <customValue>
+        <fullName>70+</fullName>
+        <default>false</default>
+        <label>70+</label>
+    </customValue>
+    <masterLabel>Age Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

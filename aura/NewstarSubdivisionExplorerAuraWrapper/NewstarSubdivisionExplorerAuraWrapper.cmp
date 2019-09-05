@@ -1,0 +1,6 @@
+<aura:component extends="c:NewstarBaseAuraWrapper" implements="flexipage:availableForRecordHome">
+
+    <aura:handler event="force:refreshView" action="{! c.refreshComponent}" />
+
+    <c:lwcNewstarSubdivisionExplorer aura:id="lwcSubdivisionExplorer" recordId="{!v.recordId}" componentTitle="Opportunity Assistant" oninteropactioncompleted="{!c.handleActionCompleted}" />
+</aura:component>

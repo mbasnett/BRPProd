@@ -1,0 +1,17 @@
+.THIS {
+}
+
+.THIS lightning-button {
+    display:block;
+}
+
+
+.THIS .ns-lwc-spinner::after {
+    position: absolute;
+    content: 'Processing your request';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+    
+}

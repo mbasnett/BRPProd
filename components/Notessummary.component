@@ -1,0 +1,7 @@
+<apex:component >
+    <apex:attribute name="sObjectType" type="String" required="true"
+        description="Type of SObject for which this component renders" />
+     <apex:attribute name="notes" type="String" required="true"
+        description="Notes summary to be rendered" />
+    <apex:inputTextarea id="Notessummry" value="{!notes}" readonly="true" rows="40" cols="60" richText="true"/>
+</apex:component>

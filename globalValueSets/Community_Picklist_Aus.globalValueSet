@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Austin 1</fullName>
+        <default>false</default>
+        <label>Austin 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Austin 2</fullName>
+        <default>false</default>
+        <label>Austin 2</label>
+    </customValue>
+    <masterLabel>Community Picklist Aus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

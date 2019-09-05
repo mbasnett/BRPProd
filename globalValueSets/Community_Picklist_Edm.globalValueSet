@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Chappelle Gardens</fullName>
+        <default>false</default>
+        <label>Chappelle Gardens</label>
+    </customValue>
+    <customValue>
+        <fullName>Edgemont</fullName>
+        <default>false</default>
+        <label>Edgemont</label>
+    </customValue>
+    <customValue>
+        <fullName>Lake Summerside</fullName>
+        <default>false</default>
+        <label>Lake Summerside</label>
+    </customValue>
+    <customValue>
+        <fullName>Paisley</fullName>
+        <default>false</default>
+        <label>Paisley</label>
+    </customValue>
+    <customValue>
+        <fullName>The Orchards</fullName>
+        <default>false</default>
+        <label>The Orchards</label>
+    </customValue>
+    <masterLabel>Community Picklist Edm</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

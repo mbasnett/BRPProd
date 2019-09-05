@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expiry date --></label>
+        <name>Expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Met date --></label>
+        <name>Met_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newstar ID --></label>
+        <name>Newstar_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newstar Sync Status --></label>
+        <name>Newstar_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Contingencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Financing Contingency</masterLabel>
+            <translation><!-- Financing Contingency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home to Close</masterLabel>
+            <translation><!-- Home to Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home to Lease</masterLabel>
+            <translation><!-- Home to Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home to Sell</masterLabel>
+            <translation><!-- Home to Sell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lawyer Approval</masterLabel>
+            <translation><!-- Lawyer Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SiteUnseen Contingency</masterLabel>
+            <translation><!-- SiteUnseen Contingency --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Contingency</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contingencies</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,3 @@
+<aura:component extends="c:NewstarQuickActionBaseAuraWrapper">
+    <c:lwcNewstarRealEstateAgent recordId="{!v.recordId}" oninteropactioncompleted="{!c.handleActionCompleted}"/>
+</aura:component>

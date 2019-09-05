@@ -1,0 +1,4629 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Direct to contract sale</fullName>
+        <description>Sales process without lot reservation</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FSelection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Contract</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Sale with lot reservation</fullName>
+        <description>Sales process with lot reservation</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lot Reservation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FSelection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Contract</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayouts>
+        <fullName>Home_Sales_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>Marketing_Community__c</fields>
+        <fields>Subdivision__c</fields>
+        <fields>Lot__c</fields>
+        <fields>Model__c</fields>
+        <fields>Total_Sale_Amount__c</fields>
+        <fields>Total_Projected_Sale_Amount__c</fields>
+        <label>Home Sales Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>New_Awesome_Companct_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>Amount</fields>
+        <fields>OwnerId</fields>
+        <label>New Awesome Compact Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Closing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Closing Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Appt_No_Show_Cancel_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Appt No Show/Cancel Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Are_you_transferring_to_the_area__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If transferring to the area, enter transfer date.</inlineHelpText>
+        <label>Are you transferring to the area?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Area_of_Interest__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select all areas of interest</inlineHelpText>
+        <label>Area of Interest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cedar Park / Leander</fullName>
+                    <default>false</default>
+                    <label>Cedar Park / Leander</label>
+                </value>
+                <value>
+                    <fullName>Central &amp; East Austin</fullName>
+                    <default>false</default>
+                    <label>Central &amp; East Austin</label>
+                </value>
+                <value>
+                    <fullName>Dripping Springs</fullName>
+                    <default>false</default>
+                    <label>Dripping Springs</label>
+                </value>
+                <value>
+                    <fullName>Georgetown / Liberty Hill</fullName>
+                    <default>false</default>
+                    <label>Georgetown / Liberty Hill</label>
+                </value>
+                <value>
+                    <fullName>Lakeway / Bee Cave</fullName>
+                    <default>false</default>
+                    <label>Lakeway / Bee Cave</label>
+                </value>
+                <value>
+                    <fullName>San Marcos</fullName>
+                    <default>false</default>
+                    <label>San Marcos</label>
+                </value>
+                <value>
+                    <fullName>No Preference</fullName>
+                    <default>false</default>
+                    <label>No Preference</label>
+                </value>
+                <value>
+                    <fullName>Ann Arundel</fullName>
+                    <default>false</default>
+                    <label>Ann Arundel</label>
+                </value>
+                <value>
+                    <fullName>Fairfax</fullName>
+                    <default>false</default>
+                    <label>Fairfax</label>
+                </value>
+                <value>
+                    <fullName>Frederick</fullName>
+                    <default>false</default>
+                    <label>Frederick</label>
+                </value>
+                <value>
+                    <fullName>Loudoun</fullName>
+                    <default>false</default>
+                    <label>Loudoun</label>
+                </value>
+                <value>
+                    <fullName>Montgomery</fullName>
+                    <default>false</default>
+                    <label>Montgomery</label>
+                </value>
+                <value>
+                    <fullName>Prince William</fullName>
+                    <default>false</default>
+                    <label>Prince William</label>
+                </value>
+                <value>
+                    <fullName>Sussex</fullName>
+                    <default>false</default>
+                    <label>Sussex</label>
+                </value>
+                <value>
+                    <fullName>Talbot</fullName>
+                    <default>false</default>
+                    <label>Talbot</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Assigned_Sales_Assistant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned Sales Assistant</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Sales_Office__c</field>
+                <operation>equals</operation>
+                <valueField>SalesAgentSalesOfficeLink__c.Sales_Office__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Agent__r.Profile__c</field>
+                <operation>contains</operation>
+                <value>Assistant</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>SalesAgentSalesOfficeLink__c</referenceTo>
+        <relationshipLabel>Opportunities (Assigned Sales Assistant)</relationshipLabel>
+        <relationshipName>Opportunities3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Base_Model_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Model Price</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bathrooms__c</fullName>
+        <externalId>false</externalId>
+        <label>Bathrooms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>2.5</fullName>
+                    <default>false</default>
+                    <label>2.5</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>3.5</fullName>
+                    <default>false</default>
+                    <label>3.5</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>4+</fullName>
+                    <default>false</default>
+                    <label>4+</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bedrooms__c</fullName>
+        <externalId>false</externalId>
+        <label>Bedrooms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>5+</fullName>
+                    <default>false</default>
+                    <label>5+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Budget_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Budget Confirmed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Community_Text__c</fullName>
+        <description>To hold the community information from the web to lead form</description>
+        <externalId>false</externalId>
+        <label>Community Interested In</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Appointment_Was_Kept__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Confirmed Appointment Was Kept</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Converted_From_Lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Converted From Lead</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deal_Stipulations__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal Stipulations</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Discovery_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discovery Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_you_currently_own_or_rent__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you currently own or rent?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Own</fullName>
+                    <default>false</default>
+                    <label>Own</label>
+                </value>
+                <value>
+                    <fullName>Rent</fullName>
+                    <default>false</default>
+                    <label>Rent</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Exit_Open_Time_Dependent_Workflows__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this checkbox is true then the record will be kicked out of any outstanding time-dependent workflows because it will be part of the criteria of the workflows. During the custom convert, we will set this to true so that the lead can be converted</description>
+        <externalId>false</externalId>
+        <label>Exit Open Time Dependent Workflows</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Home_Swing__c</fullName>
+        <externalId>false</externalId>
+        <label>Home Swing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>false</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Household_Income__c</fullName>
+        <externalId>false</externalId>
+        <label>Household Income</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Up to $39,000</fullName>
+                    <default>false</default>
+                    <label>Up to $39,000</label>
+                </value>
+                <value>
+                    <fullName>$40,000 - $99,000</fullName>
+                    <default>false</default>
+                    <label>$40,000 - $99,000</label>
+                </value>
+                <value>
+                    <fullName>$100,000 - $149,000</fullName>
+                    <default>false</default>
+                    <label>$100,000 - $149,000</label>
+                </value>
+                <value>
+                    <fullName>$150,000 - $199,000</fullName>
+                    <default>false</default>
+                    <label>$150,000 - $199,000</label>
+                </value>
+                <value>
+                    <fullName>$200,000 - $299,000</fullName>
+                    <default>false</default>
+                    <label>$200,000 - $299,000</label>
+                </value>
+                <value>
+                    <fullName>$300,000 - $399,000</fullName>
+                    <default>false</default>
+                    <label>$300,000 - $399,000</label>
+                </value>
+                <value>
+                    <fullName>$400,000+</fullName>
+                    <default>false</default>
+                    <label>$400,000+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>How_long_have_you_been_house_hunting__c</fullName>
+        <externalId>false</externalId>
+        <label>How long have you been house hunting?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 1 Month</fullName>
+                    <default>false</default>
+                    <label>Less than 1 Month</label>
+                </value>
+                <value>
+                    <fullName>1-3 Months</fullName>
+                    <default>false</default>
+                    <label>1-3 Months</label>
+                </value>
+                <value>
+                    <fullName>3-6 Months</fullName>
+                    <default>false</default>
+                    <label>3-6 Months</label>
+                </value>
+                <value>
+                    <fullName>6+ Months</fullName>
+                    <default>false</default>
+                    <label>6+ Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HubSpot_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>HubSpot Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hubspot_Lifecycle_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Hubspot Lifecycle Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Subscriber</fullName>
+                    <default>false</default>
+                    <label>Subscriber</label>
+                </value>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>false</default>
+                    <label>Lead</label>
+                </value>
+                <value>
+                    <fullName>Marketing Qualified Lead</fullName>
+                    <default>false</default>
+                    <label>Marketing Qualified Lead</label>
+                </value>
+                <value>
+                    <fullName>Sales Qualified Lead</fullName>
+                    <default>false</default>
+                    <label>Sales Qualified Lead</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Evangelist</fullName>
+                    <default>false</default>
+                    <label>Evangelist</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hubspot_Original_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Hubspot Original Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Time_Dependent_Workflows__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>In  Time Dependent Workflows</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Internet_Sales_Repr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Online Sales Counselor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Sales_Office__c</field>
+                <operation>equals</operation>
+                <valueField>SalesAgentSalesOfficeLink__c.Sales_Office__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Agent__r.Profile__c</field>
+                <operation>contains</operation>
+                <value>ISR</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>SalesAgentSalesOfficeLink__c</referenceTo>
+        <relationshipLabel>Opportunities (Internet Sales Rep)</relationshipLabel>
+        <relationshipName>Opportunities2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Investment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Investment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsAutomatedStageUpdate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IsAutomatedStageUpdate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lead_Channel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_Detail__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provides more detail about Lead Source</inlineHelpText>
+        <label>Lead Source Detail</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lead_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Buyer</fullName>
+                    <default>false</default>
+                    <label>Buyer</label>
+                </value>
+                <value>
+                    <fullName>Cancellation</fullName>
+                    <default>false</default>
+                    <label>Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Contest Entry</fullName>
+                    <default>false</default>
+                    <label>Contest Entry</label>
+                </value>
+                <value>
+                    <fullName>Homeowner</fullName>
+                    <default>false</default>
+                    <label>Homeowner</label>
+                </value>
+                <value>
+                    <fullName>Industry Professional</fullName>
+                    <default>false</default>
+                    <label>Industry Professional</label>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Realtor</fullName>
+                    <default>false</default>
+                    <label>Realtor</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                    <label>Vendor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>StageName</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Appraisal Issue</fullName>
+                    <default>false</default>
+                    <label>Appraisal Issue</label>
+                </value>
+                <value>
+                    <fullName>Changed Mind</fullName>
+                    <default>false</default>
+                    <label>Changed Mind</label>
+                </value>
+                <value>
+                    <fullName>Change in Employment / Relocation</fullName>
+                    <default>false</default>
+                    <label>Change in Employment / Relocation</label>
+                </value>
+                <value>
+                    <fullName>Change in Marital Status</fullName>
+                    <default>false</default>
+                    <label>Change in Marital Status</label>
+                </value>
+                <value>
+                    <fullName>Concerns with Disclosure</fullName>
+                    <default>false</default>
+                    <label>Concerns with Disclosure</label>
+                </value>
+                <value>
+                    <fullName>Contingency Expiration</fullName>
+                    <default>false</default>
+                    <label>Contingency Expiration</label>
+                </value>
+                <value>
+                    <fullName>Correction</fullName>
+                    <default>false</default>
+                    <label>Correction</label>
+                </value>
+                <value>
+                    <fullName>Customer Satisfaction</fullName>
+                    <default>false</default>
+                    <label>Customer Satisfaction</label>
+                </value>
+                <value>
+                    <fullName>Discontinued Product</fullName>
+                    <default>false</default>
+                    <label>Discontinued Product</label>
+                </value>
+                <value>
+                    <fullName>Homesite Conditions</fullName>
+                    <default>false</default>
+                    <label>Homesite Conditions</label>
+                </value>
+                <value>
+                    <fullName>Loan Denial</fullName>
+                    <default>false</default>
+                    <label>Loan Denial</label>
+                </value>
+                <value>
+                    <fullName>Lot Transfer / Lot Assignment</fullName>
+                    <default>false</default>
+                    <label>Lot Transfer / Lot Assignment</label>
+                </value>
+                <value>
+                    <fullName>Material Out of Stock</fullName>
+                    <default>false</default>
+                    <label>Material Out of Stock</label>
+                </value>
+                <value>
+                    <fullName>Medical Reasons</fullName>
+                    <default>false</default>
+                    <label>Medical Reasons</label>
+                </value>
+                <value>
+                    <fullName>Nonperformance</fullName>
+                    <default>false</default>
+                    <label>Nonperformance</label>
+                </value>
+                <value>
+                    <fullName>Offer Not Accepted</fullName>
+                    <default>false</default>
+                    <label>Offer Not Accepted</label>
+                </value>
+                <value>
+                    <fullName>Purchased with Competitor</fullName>
+                    <default>false</default>
+                    <label>Purchased with Competitor</label>
+                </value>
+                <value>
+                    <fullName>Right of Rescission</fullName>
+                    <default>false</default>
+                    <label>Right of Rescission</label>
+                </value>
+                <value>
+                    <fullName>Unsatisfied with Product</fullName>
+                    <default>false</default>
+                    <label>Unsatisfied with Product</label>
+                </value>
+                <value>
+                    <fullName>.Cost Objections</fullName>
+                    <default>false</default>
+                    <label>.Cost Objections</label>
+                </value>
+                <value>
+                    <fullName>.Just Looking</fullName>
+                    <default>false</default>
+                    <label>.Just Looking</label>
+                </value>
+                <value>
+                    <fullName>.No Response</fullName>
+                    <default>false</default>
+                    <label>.No Response</label>
+                </value>
+                <value>
+                    <fullName>.Not Interested</fullName>
+                    <default>false</default>
+                    <label>.Not Interested</label>
+                </value>
+                <value>
+                    <fullName>.Other Builder</fullName>
+                    <default>false</default>
+                    <label>.Other Builder</label>
+                </value>
+                <value>
+                    <fullName>.Out of Market</fullName>
+                    <default>false</default>
+                    <label>.Out of Market</label>
+                </value>
+                <value>
+                    <fullName>.Timeline</fullName>
+                    <default>false</default>
+                    <label>.Timeline</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Appraisal Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Changed Mind</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Change in Employment / Relocation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Change in Marital Status</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Concerns with Disclosure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Contingency Expiration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Correction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Customer Satisfaction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Discontinued Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Homesite Conditions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Loan Denial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Lot Transfer / Lot Assignment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Material Out of Stock</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Medical Reasons</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Nonperformance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Offer Not Accepted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Purchased with Competitor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Right of Rescission</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <controllingFieldValue>Cancelled</controllingFieldValue>
+                <valueName>Unsatisfied with Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Cost Objections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Just Looking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Not Interested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Other Builder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Out of Market</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost</controllingFieldValue>
+                <valueName>.Timeline</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lot_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lot__r.Street_Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lot Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lot_Hold_Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Lot Hold Expiry Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lot_Premium__c</fullName>
+        <externalId>false</externalId>
+        <label>Lot Premium</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lot_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Lot Price</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lot__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lot</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 AND 2 AND 3 AND 4) OR 5</booleanFilter>
+            <errorMessage>Lot must belong to the selected subdivision, be available (open) and be released for sale.</errorMessage>
+            <filterItems>
+                <field>Lot__c.Subdivision__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Subdivision__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Lot__c.Released_for_Sale__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>Lot__c.Status__c</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.StageName</field>
+                <operation>equals</operation>
+                <value>Prospecting, Engagement, Quote/Selection</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.StageName</field>
+                <operation>equals</operation>
+                <value>Contract Ready, Lot Reservation, Pending Offer, Under Contract, Closed Home, Cancelled, Quote Closed</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Lot__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MaritalStatus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>MaritalStatus</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Community__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Marketing Community</label>
+        <referenceTo>Marketing_Community__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Model must belong to the selected subdivision and must be active.</errorMessage>
+            <filterItems>
+                <field>Model__c.Subdivision__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Subdivision__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Model__c.Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Model__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Newstar_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Newstar ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Newstar_Sync_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Newstar Sync Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Number_of_Children_in_Home__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Children in Home</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4+</fullName>
+                    <default>false</default>
+                    <label>4+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Online_Sales_Added_Date__c</fullName>
+        <description>Date Online Sales Counselor added to record</description>
+        <externalId>false</externalId>
+        <label>Online Sales Added Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Cancel_Loss_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Cancel/Loss Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Projected_Base_Model_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Base_Model_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projected Base Model Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Lot_Premium__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lot_Premium__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projected Lot Premium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Lot_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lot_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projected Lot Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ROI_Analysis_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ROI Analysis Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Ready, Willing, Able</fullName>
+                    <default>false</default>
+                    <label>A - Ready, Willing, Able</label>
+                </value>
+                <value>
+                    <fullName>B - Two of These</fullName>
+                    <default>false</default>
+                    <label>B - Two of These</label>
+                </value>
+                <value>
+                    <fullName>C - Ready or Willing or Able</fullName>
+                    <default>false</default>
+                    <label>C - Ready or Willing or Able</label>
+                </value>
+                <value>
+                    <fullName>D - Cold</fullName>
+                    <default>false</default>
+                    <label>D - Cold</label>
+                </value>
+                <value>
+                    <fullName>M - Marketing Only</fullName>
+                    <default>false</default>
+                    <label>M - Marketing Only</label>
+                </value>
+                <value>
+                    <fullName>W - Web Lead</fullName>
+                    <default>false</default>
+                    <label>W - Web Lead</label>
+                </value>
+                <value>
+                    <fullName>Cold</fullName>
+                    <default>false</default>
+                    <label>Cold</label>
+                </value>
+                <value>
+                    <fullName>Hot</fullName>
+                    <default>false</default>
+                    <label>Hot</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Real_Estate_Agent__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Real Estate Agent</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Select a valid real estate agent</errorMessage>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Real Estate Agent</value>
+            </filterItems>
+            <infoMessage>Select a real estate agent representing the customer for this deal.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Agent Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Revised_Closing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Revised Closing Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent1_Added_Date__c</fullName>
+        <description>Date Sales Office Agent1 added to record</description>
+        <externalId>false</externalId>
+        <label>Sales Agent1 Added Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent_Sales_Office_Relationship_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Office Agent 2</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Office__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Sales_Office__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Agent__r.Profile__c</field>
+                <operation>contains</operation>
+                <value>Sales User</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>SalesAgentSalesOfficeLink__c</referenceTo>
+        <relationshipLabel>Opportunities (Sales Office Agent 2)</relationshipLabel>
+        <relationshipName>Opportunities_2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent_Sales_Office_Relationship__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Office Agent</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <errorMessage>Sales Agent should belong to the selected Sales Office.</errorMessage>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Office__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Sales_Office__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Agent__r.Profile__c</field>
+                <operation>contains</operation>
+                <value>Sales User</value>
+            </filterItems>
+            <filterItems>
+                <field>SalesAgentSalesOfficeLink__c.Sales_Agent__r.Profile__c</field>
+                <operation>contains</operation>
+                <value>Manager</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SalesAgentSalesOfficeLink__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent_s_Working__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Agent(s) Working</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aleks Korowski</fullName>
+                    <default>false</default>
+                    <label>Aleks Korowski</label>
+                </value>
+                <value>
+                    <fullName>Amy Franks</fullName>
+                    <default>false</default>
+                    <label>Amy Franks</label>
+                </value>
+                <value>
+                    <fullName>Angie Cole</fullName>
+                    <default>false</default>
+                    <label>Angie Cole</label>
+                </value>
+                <value>
+                    <fullName>Angie Miller</fullName>
+                    <default>false</default>
+                    <label>Angie Miller</label>
+                </value>
+                <value>
+                    <fullName>Belinda Shuler</fullName>
+                    <default>false</default>
+                    <label>Belinda Shuler</label>
+                </value>
+                <value>
+                    <fullName>Brian Blair</fullName>
+                    <default>false</default>
+                    <label>Brian Blair</label>
+                </value>
+                <value>
+                    <fullName>Colin Sexton</fullName>
+                    <default>false</default>
+                    <label>Colin Sexton</label>
+                </value>
+                <value>
+                    <fullName>David Matthys</fullName>
+                    <default>false</default>
+                    <label>David Matthys</label>
+                </value>
+                <value>
+                    <fullName>Dori Conway</fullName>
+                    <default>false</default>
+                    <label>Dori Conway</label>
+                </value>
+                <value>
+                    <fullName>James Haugen</fullName>
+                    <default>false</default>
+                    <label>James Haugen</label>
+                </value>
+                <value>
+                    <fullName>Janice Wunning</fullName>
+                    <default>false</default>
+                    <label>Janice Wunning</label>
+                </value>
+                <value>
+                    <fullName>Kendra Johnson</fullName>
+                    <default>false</default>
+                    <label>Kendra Johnson</label>
+                </value>
+                <value>
+                    <fullName>Kevin Bendy</fullName>
+                    <default>false</default>
+                    <label>Kevin Bendy</label>
+                </value>
+                <value>
+                    <fullName>Lara Ingalsbe</fullName>
+                    <default>false</default>
+                    <label>Lara Ingalsbe</label>
+                </value>
+                <value>
+                    <fullName>Linda Lahrman</fullName>
+                    <default>false</default>
+                    <label>Linda Lahrman</label>
+                </value>
+                <value>
+                    <fullName>Lou Niemeyer</fullName>
+                    <default>false</default>
+                    <label>Lou Niemeyer</label>
+                </value>
+                <value>
+                    <fullName>Marc Bodley</fullName>
+                    <default>false</default>
+                    <label>Marc Bodley</label>
+                </value>
+                <value>
+                    <fullName>Matt Schroeder</fullName>
+                    <default>false</default>
+                    <label>Matt Schroeder</label>
+                </value>
+                <value>
+                    <fullName>Randy Perry</fullName>
+                    <default>false</default>
+                    <label>Randy Perry</label>
+                </value>
+                <value>
+                    <fullName>Richard Romeo</fullName>
+                    <default>false</default>
+                    <label>Richard Romeo</label>
+                </value>
+                <value>
+                    <fullName>Steve Chase</fullName>
+                    <default>false</default>
+                    <label>Steve Chase</label>
+                </value>
+                <value>
+                    <fullName>Tina Spencer</fullName>
+                    <default>false</default>
+                    <label>Tina Spencer</label>
+                </value>
+                <value>
+                    <fullName>Vern Carlson</fullName>
+                    <default>false</default>
+                    <label>Vern Carlson</label>
+                </value>
+                <value>
+                    <fullName>Jesse Miller</fullName>
+                    <default>false</default>
+                    <label>Jesse Miller</label>
+                </value>
+                <value>
+                    <fullName>Joelle Hogg</fullName>
+                    <default>false</default>
+                    <label>Joelle Hogg</label>
+                </value>
+                <value>
+                    <fullName>Michael Wagner</fullName>
+                    <default>false</default>
+                    <label>Michael Wagner</label>
+                </value>
+                <value>
+                    <fullName>Nichole Knight</fullName>
+                    <default>false</default>
+                    <label>Nichole Knight</label>
+                </value>
+                <value>
+                    <fullName>Stephanie McKinney</fullName>
+                    <default>false</default>
+                    <label>Stephanie McKinney</label>
+                </value>
+                <value>
+                    <fullName>Sylvia Ingalsbe</fullName>
+                    <default>false</default>
+                    <label>Sylvia Ingalsbe</label>
+                </value>
+                <value>
+                    <fullName>Dustin Compton</fullName>
+                    <default>false</default>
+                    <label>Dustin Compton</label>
+                </value>
+                <value>
+                    <fullName>Dennis Dresch</fullName>
+                    <default>false</default>
+                    <label>Dennis Dresch</label>
+                </value>
+                <value>
+                    <fullName>Boris Shorter</fullName>
+                    <default>false</default>
+                    <label>Boris Shorter</label>
+                </value>
+                <value>
+                    <fullName>Ali Young</fullName>
+                    <default>false</default>
+                    <label>Ali Young</label>
+                </value>
+                <value>
+                    <fullName>Annie Sickmen</fullName>
+                    <default>false</default>
+                    <label>Annie Sickmen</label>
+                </value>
+                <value>
+                    <fullName>Armondo Arroyo</fullName>
+                    <default>false</default>
+                    <label>Armondo Arroyo</label>
+                </value>
+                <value>
+                    <fullName>Bill Hubbell</fullName>
+                    <default>false</default>
+                    <label>Bill Hubbell</label>
+                </value>
+                <value>
+                    <fullName>Chelsea Byrd</fullName>
+                    <default>false</default>
+                    <label>Chelsea Byrd</label>
+                </value>
+                <value>
+                    <fullName>Chris Shafer</fullName>
+                    <default>false</default>
+                    <label>Chris Shafer</label>
+                </value>
+                <value>
+                    <fullName>Cindy Cabral</fullName>
+                    <default>false</default>
+                    <label>Cindy Cabral</label>
+                </value>
+                <value>
+                    <fullName>Erin Smith</fullName>
+                    <default>false</default>
+                    <label>Erin Smith</label>
+                </value>
+                <value>
+                    <fullName>Gary Smith</fullName>
+                    <default>false</default>
+                    <label>Gary Smith</label>
+                </value>
+                <value>
+                    <fullName>Gayle Ellis</fullName>
+                    <default>false</default>
+                    <label>Gayle Ellis</label>
+                </value>
+                <value>
+                    <fullName>Julie Armstrong</fullName>
+                    <default>false</default>
+                    <label>Julie Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Keith Fernandes</fullName>
+                    <default>false</default>
+                    <label>Keith Fernandes</label>
+                </value>
+                <value>
+                    <fullName>Laura Compton</fullName>
+                    <default>false</default>
+                    <label>Laura Compton</label>
+                </value>
+                <value>
+                    <fullName>Matt Turner</fullName>
+                    <default>false</default>
+                    <label>Matt Turner</label>
+                </value>
+                <value>
+                    <fullName>Megan Cook</fullName>
+                    <default>false</default>
+                    <label>Megan Cook</label>
+                </value>
+                <value>
+                    <fullName>Michael Lodobzinski</fullName>
+                    <default>false</default>
+                    <label>Michael Lodobzinski</label>
+                </value>
+                <value>
+                    <fullName>Nancy Ermenidis</fullName>
+                    <default>false</default>
+                    <label>Nancy Ermenidis</label>
+                </value>
+                <value>
+                    <fullName>Peter Daly</fullName>
+                    <default>false</default>
+                    <label>Peter Daly</label>
+                </value>
+                <value>
+                    <fullName>Peter Hoffman</fullName>
+                    <default>false</default>
+                    <label>Peter Hoffman</label>
+                </value>
+                <value>
+                    <fullName>Sarah Plourde</fullName>
+                    <default>false</default>
+                    <label>Sarah Plourde</label>
+                </value>
+                <value>
+                    <fullName>Steve Hoppe</fullName>
+                    <default>false</default>
+                    <label>Steve Hoppe</label>
+                </value>
+                <value>
+                    <fullName>Susan Meed</fullName>
+                    <default>false</default>
+                    <label>Susan Meed</label>
+                </value>
+                <value>
+                    <fullName>Tawna Pruitt</fullName>
+                    <default>false</default>
+                    <label>Tawna Pruitt</label>
+                </value>
+                <value>
+                    <fullName>Taylor Sowers</fullName>
+                    <default>false</default>
+                    <label>Taylor Sowers</label>
+                </value>
+                <value>
+                    <fullName>Tracie Gochenour</fullName>
+                    <default>false</default>
+                    <label>Tracie Gochenour</label>
+                </value>
+                <value>
+                    <fullName>Tyler Sutherland</fullName>
+                    <default>false</default>
+                    <label>Tyler Sutherland</label>
+                </value>
+                <value>
+                    <fullName>Ty Reuter</fullName>
+                    <default>false</default>
+                    <label>Ty Reuter</label>
+                </value>
+                <value>
+                    <fullName>Matt Dumas</fullName>
+                    <default>false</default>
+                    <label>Matt Dumas</label>
+                </value>
+                <value>
+                    <fullName>Meg Crane</fullName>
+                    <default>false</default>
+                    <label>Meg Crane</label>
+                </value>
+                <value>
+                    <fullName>Liz Ellis</fullName>
+                    <default>false</default>
+                    <label>Liz Ellis</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Assistant_Added_Date__c</fullName>
+        <description>Date Sales Assistant added to record</description>
+        <externalId>false</externalId>
+        <label>Sales Assistant Added Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Office__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Office</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Sales_Office__c.Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Sales_Office__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scenario_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Scenario Name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>StageName</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                    <label>No Response</label>
+                </value>
+                <value>
+                    <fullName>Responded</fullName>
+                    <default>false</default>
+                    <label>Responded</label>
+                </value>
+                <value>
+                    <fullName>Responded Nurture</fullName>
+                    <default>false</default>
+                    <label>Responded Nurture</label>
+                </value>
+                <value>
+                    <fullName>Unattended Tour</fullName>
+                    <default>false</default>
+                    <label>Unattended Tour</label>
+                </value>
+                <value>
+                    <fullName>Confirmed Appointment</fullName>
+                    <default>false</default>
+                    <label>Confirmed Appointment</label>
+                </value>
+                <value>
+                    <fullName>Missed Appointment</fullName>
+                    <default>false</default>
+                    <label>Missed Appointment</label>
+                </value>
+                <value>
+                    <fullName>Site Visited</fullName>
+                    <default>false</default>
+                    <label>Site Visited</label>
+                </value>
+                <value>
+                    <fullName>Contingent</fullName>
+                    <default>false</default>
+                    <label>Contingent</label>
+                </value>
+                <value>
+                    <fullName>Purchased</fullName>
+                    <default>false</default>
+                    <label>Purchased</label>
+                </value>
+                <value>
+                    <fullName>Prequalified</fullName>
+                    <default>false</default>
+                    <label>Prequalified</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <valueName>Responded</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <valueName>Responded Nurture</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <valueName>Unattended Tour</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <valueName>Confirmed Appointment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <valueName>Missed Appointment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engagement</controllingFieldValue>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <valueName>Site Visited</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <controllingFieldValue>Pending Offer</controllingFieldValue>
+                <controllingFieldValue>Under Contract</controllingFieldValue>
+                <valueName>Contingent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <controllingFieldValue>Pending Offer</controllingFieldValue>
+                <controllingFieldValue>Under Contract</controllingFieldValue>
+                <valueName>Purchased</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Selection</controllingFieldValue>
+                <controllingFieldValue>Lot Reservation</controllingFieldValue>
+                <controllingFieldValue>Contract Ready</controllingFieldValue>
+                <controllingFieldValue>Pending Offer</controllingFieldValue>
+                <controllingFieldValue>Under Contract</controllingFieldValue>
+                <valueName>Prequalified</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subdivision__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Subdivision must belong to the selected sales office and the selected marketing community.</errorMessage>
+            <filterItems>
+                <field>Subdivision__c.Sales_Office__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Sales_Office__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Subdivision__c.Marketing_Community__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Marketing_Community__c</valueField>
+            </filterItems>
+            <infoMessage>Select a subdivision</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Subdivision__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sync_to_HubSpot__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync to HubSpot</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Closing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Closing Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Total_Actual_Sale_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Actual Sale Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Deposit_Due__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Deposit Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Discount Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Estimated_Sale_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Base_Model_Price__c 
++ Lot_Premium__c 
++ Lot_Price__c 
++ Total_Options_Amount__c 
+- Total_Discount_Amount__c 
++ Total_Tax_Amount__c 
+- Total_Tax_Rebate_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Estimated Sale Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Mortgage_Incentive_Included__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Mortgage Incentive Included</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Mortgage_Incentive__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Mortgage Incentive</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Options_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Options Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Proj_Mortg_Incent_Incl__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Projected Mortgage Incentive Incl.</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Discount Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Mortgage_Incentive__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Mortgage Incentive</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Options_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Options Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Sale_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Sale Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Tax Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Projected_Tax_Rebate_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Projected Tax Rebate Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Received_Deposit__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Received Deposit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Sale_Amount__c</fullName>
+        <description>Presents either an actual deal total set by NEWSTAR or an estimated total computed locally in Salesforce</description>
+        <externalId>false</externalId>
+        <formula>IF( Total_Actual_Sale_Amount__c&gt;0,  Total_Actual_Sale_Amount__c,  Total_Estimated_Sale_Amount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Sale Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Scheduled_Deposit__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Scheduled Deposit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tax Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Tax_Rebate_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tax Rebate Amount</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Transferring_to_area_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If lead is transferring to the area, enter date they expect to transfer.</inlineHelpText>
+        <label>Transferring to area date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of First Visit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Web_Form__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Form</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>Home_Sales_Compact_Layout</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.TYPE</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Cancelled_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </filters>
+        <label>All Cancelled Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Total_Sale_Amount__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Subdivision__c</columns>
+        <columns>Model__c</columns>
+        <columns>Lot__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Cancelled_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </filters>
+        <label>My Cancelled Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Closed_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Closed Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Marketing_Community__c</columns>
+        <columns>Subdivision__c</columns>
+        <columns>Lot__c</columns>
+        <columns>Model__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Subdivision__c</columns>
+        <columns>Lot__c</columns>
+        <columns>Model__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Direct_offer</fullName>
+        <active>true</active>
+        <businessProcess>Direct to contract sale</businessProcess>
+        <label>Direct offer</label>
+        <picklistValues>
+            <picklist>Are_you_transferring_to_the_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_of_Interest__c</picklist>
+            <values>
+                <fullName>Ann Arundel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cedar Park %2F Leander</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central %26 East Austin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dripping Springs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fairfax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frederick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgetown %2F Liberty Hill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakeway %2F Bee Cave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loudoun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montgomery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince William</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Marcos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sussex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talbot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bathrooms__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bedrooms__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_currently_own_or_rent__c</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Own</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Home_Swing__c</picklist>
+            <values>
+                <fullName>Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Right</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Household_Income__c</picklist>
+            <values>
+                <fullName>%24100%2C000 - %24149%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24150%2C000 - %24199%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24200%2C000 - %24299%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24399%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2440%2C000 - %2499%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Up to %2439%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_long_have_you_been_house_hunting__c</picklist>
+            <values>
+                <fullName>1-3 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2B Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 1 Month</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hubspot_Lifecycle_Stage__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evangelist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Qualified Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Qualified Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>3rd Party Listing Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent_Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Be Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Enthusiast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook Lead Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live in Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printed Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Television</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Form%2FReg Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Channel__c</picklist>
+            <values>
+                <fullName>Event Registration%2FImport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MyTime Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Type__c</picklist>
+            <values>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contest Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loss_Reason__c</picklist>
+            <values>
+                <fullName>%2ECost Objections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EJust Looking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENo Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENot Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOther Builder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOut of Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ETimeline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appraisal Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Employment %2F Relocation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Marital Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed Mind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concerns with Disclosure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingency Expiration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discontinued Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homesite Conditions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Denial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Transfer %2F Lot Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Out of Stock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonperformance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offer Not Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased with Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Right of Rescission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsatisfied with Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Number_of_Children_in_Home__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating__c</picklist>
+            <values>
+                <fullName>A - Ready%2C Willing%2C Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Two of These</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Ready or Willing or Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M - Marketing Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W - Web Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Agent_s_Working__c</picklist>
+            <values>
+                <fullName>Aleks Korowski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ali Young</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Cole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annie Sickmen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armondo Arroyo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belinda Shuler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bill Hubbell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boris Shorter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Blair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chelsea Byrd</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chris Shafer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cindy Cabral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colin Sexton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Matthys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dennis Dresch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dori Conway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dustin Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Erin Smith</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gary Smith</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gayle Ellis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>James Haugen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Janice Wunning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jesse Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joelle Hogg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Julie Armstrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keith Fernandes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kendra Johnson</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kevin Bendy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lara Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laura Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linda Lahrman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liz Ellis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lou Niemeyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marc Bodley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Dumas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Schroeder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Turner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meg Crane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Megan Cook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Lodobzinski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Wagner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nancy Ermenidis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nichole Knight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peter Daly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peter Hoffman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Richard Romeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sarah Plourde</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie McKinney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Hoppe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Susan Meed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sylvia Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tawna Pruitt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taylor Sowers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tina Spencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tracie Gochenour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ty Reuter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyler Sutherland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vern Carlson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Confirmed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prequalified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded Nurture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unattended Tour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer - Downgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Lot_reservation</fullName>
+        <active>true</active>
+        <businessProcess>Sale with lot reservation</businessProcess>
+        <label>Lot reservation</label>
+        <picklistValues>
+            <picklist>Are_you_transferring_to_the_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_of_Interest__c</picklist>
+            <values>
+                <fullName>Ann Arundel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cedar Park %2F Leander</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central %26 East Austin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dripping Springs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fairfax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frederick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgetown %2F Liberty Hill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakeway %2F Bee Cave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loudoun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montgomery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince William</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Marcos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sussex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talbot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bathrooms__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bedrooms__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_currently_own_or_rent__c</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Own</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Home_Swing__c</picklist>
+            <values>
+                <fullName>Left</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Right</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Household_Income__c</picklist>
+            <values>
+                <fullName>%24100%2C000 - %24149%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24150%2C000 - %24199%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24200%2C000 - %24299%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24399%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2440%2C000 - %2499%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Up to %2439%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_long_have_you_been_house_hunting__c</picklist>
+            <values>
+                <fullName>1-3 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2B Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 1 Month</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hubspot_Lifecycle_Stage__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evangelist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Qualified Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Qualified Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>3rd Party Listing Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent_Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Be Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Enthusiast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook Lead Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live in Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printed Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Television</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Form%2FReg Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Channel__c</picklist>
+            <values>
+                <fullName>Event Registration%2FImport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MyTime Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Type__c</picklist>
+            <values>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contest Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loss_Reason__c</picklist>
+            <values>
+                <fullName>%2ECost Objections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EJust Looking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENo Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ENot Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOther Builder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2EOut of Market</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2ETimeline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appraisal Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Employment %2F Relocation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Marital Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed Mind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concerns with Disclosure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingency Expiration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discontinued Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homesite Conditions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Denial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Transfer %2F Lot Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Out of Stock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonperformance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offer Not Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased with Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Right of Rescission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsatisfied with Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Number_of_Children_in_Home__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating__c</picklist>
+            <values>
+                <fullName>A - Ready%2C Willing%2C Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Two of These</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Ready or Willing or Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M - Marketing Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W - Web Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Agent_s_Working__c</picklist>
+            <values>
+                <fullName>Aleks Korowski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ali Young</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Cole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annie Sickmen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armondo Arroyo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belinda Shuler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bill Hubbell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boris Shorter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Blair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chelsea Byrd</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chris Shafer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cindy Cabral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colin Sexton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Matthys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dennis Dresch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dori Conway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dustin Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Erin Smith</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gary Smith</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gayle Ellis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>James Haugen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Janice Wunning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jesse Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joelle Hogg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Julie Armstrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keith Fernandes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kendra Johnson</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kevin Bendy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lara Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laura Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linda Lahrman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liz Ellis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lou Niemeyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marc Bodley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Dumas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Schroeder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Turner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meg Crane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Megan Cook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Lodobzinski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Wagner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nancy Ermenidis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nichole Knight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peter Daly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peter Hoffman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Richard Romeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sarah Plourde</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie McKinney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Hoppe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Susan Meed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sylvia Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tawna Pruitt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taylor Sowers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tina Spencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tracie Gochenour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ty Reuter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyler Sutherland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vern Carlson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Confirmed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contingent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missed Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prequalified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responded Nurture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unattended Tour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer - Downgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Enforce_presited_model</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+ISCHANGED(Model__c)
+||
+ISCHANGED(Lot__c)
+)
+&amp;&amp;
+Lot__c!=null
+&amp;&amp;
+(TEXT(Lot__r.Type__c)=='Regular')
+&amp;&amp;
+Lot__r.Assigned_Model__c!=null
+&amp;&amp;
+Model__c!=Lot__r.Assigned_Model__c</errorConditionFormula>
+        <errorMessage>The selected lot is a Regular lot with a pre-sited model assigned. The model selected for the Opportunity should match the model pre-sited for the lot.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Enforce_spec_model</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+ISCHANGED(Model__c)
+||
+ISCHANGED(Lot__c)
+)
+&amp;&amp;
+Lot__c!=null
+&amp;&amp;
+(TEXT(Lot__r.Type__c)='Spec' || TEXT(Lot__r.Type__c)='Model')
+&amp;&amp;
+Model__c!=Lot__r.Assigned_Model__c</errorConditionFormula>
+        <errorMessage>The selected lot is of type Spec or Model. The model selected for the Opportunity should match the model assigned to the Spec lot.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ensure_Different_Sales_Office_Agents</fullName>
+        <active>true</active>
+        <errorConditionFormula>Sales_Agent_Sales_Office_Relationship__c!=null
+&amp;&amp;
+Sales_Agent_Sales_Office_Relationship_2__c !=null
+&amp;&amp;
+Sales_Agent_Sales_Office_Relationship__c==Sales_Agent_Sales_Office_Relationship_2__c</errorConditionFormula>
+        <errorMessage>Sales Office Agent and Sales Office Agent 2 cannot be set to the same agent. Please select different agents.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_changes_when_reserved</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+ISCHANGED(Model__c) 
+|| ISCHANGED(Lot__c) 
+|| ISCHANGED(Sales_Office__c) 
+|| ISCHANGED(Subdivision__c)
+|| ISCHANGED(Sales_Agent_Sales_Office_Relationship__c)
+|| ISCHANGED(Sales_Agent_Sales_Office_Relationship_2__c)
+|| ISCHANGED(Real_Estate_Agent__c)
+) 
+
+&amp;&amp; 
+
+(
+TEXT(StageName)='Lot Reservation' 
+|| TEXT(StageName)='Contract Ready'
+|| TEXT(StageName)='Pending Offer' 
+|| TEXT(StageName)='Under Contract' 
+|| TEXT(StageName)='Closed'
+|| TEXT(StageName)='Quote Closed'
+)</errorConditionFormula>
+        <errorMessage>Model, lot, subdivision, sales office, sales agent and real estate agent cannot be changed when the lot is reserved or under contract.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_No_show_Reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Status__c , "Missed Appointment") &amp;&amp; 
+ISBLANK( Appt_No_Show_Cancel_Reason__c )</errorConditionFormula>
+        <errorMessage>Please enter the Appt No Show/Cancel Reason when the status is Missed Appointment</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Visit_Date_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISCHANGED(Visit_Date__c) , OR(Visit_Date__c &gt; TODAY(), Visit_Date__c&lt;(TODAY() + if(WEEKDAY(TODAY())=1,(2-WEEKDAY(TODAY()-WEEKDAY(TODAY()))-1),2-WEEKDAY(TODAY())))))</errorConditionFormula>
+        <errorDisplayField>Visit_Date__c</errorDisplayField>
+        <errorMessage>Selected date cannot be in the future or from last week</errorMessage>
+    </validationRules>
+</CustomObject>

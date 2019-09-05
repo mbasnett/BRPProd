@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Chinook Gate</fullName>
+        <default>false</default>
+        <label>Chinook Gate</label>
+    </customValue>
+    <customValue>
+        <fullName>Cranston&apos;s Riverstone</fullName>
+        <default>false</default>
+        <label>Cranston&apos;s Riverstone</label>
+    </customValue>
+    <customValue>
+        <fullName>Livingston</fullName>
+        <default>false</default>
+        <label>Livingston</label>
+    </customValue>
+    <customValue>
+        <fullName>Seton</fullName>
+        <default>false</default>
+        <label>Seton</label>
+    </customValue>
+    <customValue>
+        <fullName>Symons Gate</fullName>
+        <default>false</default>
+        <label>Symons Gate</label>
+    </customValue>
+    <masterLabel>Community Picklist Cal</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

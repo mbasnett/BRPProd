@@ -1,0 +1,39 @@
+<template>
+    <div class="slds-grid slds-wrap">
+
+        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+            <p class="slds-text-heading_medium">
+                {agentName}
+
+            </p>
+
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+            <p>
+                {agencyName}
+
+            </p>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-m-top_small">
+            <template if:true={isAlreadyInNewstar}>
+                <p>
+                    This real estate agent has been already sent to NEWSTAR. If you wish to update the agent
+                    information
+                    in NEWSTAR with the data on the Salesforce record, click "Update" below.
+                </p>
+                <lightning-button label="Update agent in NEWSTAR" variant="brand" class="slds-m-top_small"
+                    onclick={handleNewstarSync}>
+                </lightning-button>
+            </template>
+            <template if:false={isAlreadyInNewstar}>
+                <p>
+                    This real estate agent record has been not been sent to NEWSTAR.
+                </p>
+                <lightning-button label="Send agent to NEWSTAR" variant="brand" class="slds-m-top_small"
+                    onclick={handleNewstarSync}>
+                </lightning-button>
+            </template>
+        </div>
+
+    </div>
+</template>

@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayoutAssignment>SYSTEMPersonAccount</compactLayoutAssignment>
+    <enableHistory>false</enableHistory>
+    <sharingModel>ReadWrite</sharingModel>
+    <recordTypes>
+        <fullName>Customer</fullName>
+        <active>true</active>
+        <description>Current/perspective buyer</description>
+        <label>Customer</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>3rd Party Listing Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent_Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Be Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Enthusiast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driving By</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook Lead Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live in Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printed Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Television</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Form%2FReg Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_of_In__pc</picklist>
+            <values>
+                <fullName>Ann Arundel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cedar Park %2F Leander</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central %26 East Austin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dripping Springs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fairfax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frederick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgetown %2F Liberty Hill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakeway %2F Bee Cave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loudoun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montgomery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince William</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Marcos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sussex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talbot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Sales_Assistants__pc</picklist>
+            <values>
+                <fullName>Alexis Hall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cathy Chadwick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandler Meadows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deborah Powell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diane Tidwell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gina Iaccino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jill Brodsky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Melissa Stein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paige Kamel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rauly Williams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sue Walker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tonya McKim</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_History_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_List_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_Picklist_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_currently_own_or_rent__pc</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Own</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Household__pc</picklist>
+            <values>
+                <fullName>%24100%2C000 - %24149%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24150%2C000 - %24199%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24200%2C000 - %24299%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24399%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000 - %24499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %2474%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 Plus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2475%2C000 - %2499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under %2450%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_long_have_you_been_house_hunting__pc</picklist>
+            <values>
+                <fullName>1-3 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2B Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 1 Month</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Channel__c</picklist>
+            <values>
+                <fullName>Event Registration%2FImport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MyTime Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Type__c</picklist>
+            <values>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contest Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Number_of_Children_in_Home__pc</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pet_Number__pc</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>more than 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pet_Type__pc</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>A - Ready%2C Willing%2C Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Two of These</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Ready or Willing or Able</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M - Marketing Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>W - Web Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repeat_Buyer__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Agent_s_Working__pc</picklist>
+            <values>
+                <fullName>Aleks Korowski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Cole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belinda Shuler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Blair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colin Sexton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Matthys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dori Conway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dustin Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>James Haugen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Janice Wunning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jesse Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joelle Hogg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kendra Johnson</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kevin Bendy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lara Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linda Lahrman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lou Niemeyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marc Bodley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Schroeder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Wagner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nichole Knight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Richard Romeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie McKinney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sylvia Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tina Spencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vern Carlson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Offer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Quote Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote%2FSelection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__pc</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Offer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Quote Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote%2FSelection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Timeframe_to_move_in__pc</picklist>
+            <values>
+                <fullName>1-2 Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2B Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6-12 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Timeframe_to_purchase__pc</picklist>
+            <values>
+                <fullName>1-2 Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2B Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6-12 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Partner %2F Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Brookfield_website_during_search__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_is_your_price_range__pc</picklist>
+            <values>
+                <fullName>%241%2C000%2C000 - %241%2C999%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24299%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24349%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24350%2C000 - %24399%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000 - %24499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 - %24599%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24600%2C000 - %24699%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24700%2C000 - %24849%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24850%2C000 - %24999%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over %242%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>under %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Which_describes_your_household__pc</picklist>
+            <values>
+                <fullName>Adult with Elderly Parent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple planning for Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple with Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple without Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Empty Nester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-generational family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siblings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single with Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unrelated Adults</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PersonAccount</fullName>
+        <active>true</active>
+        <label>Person Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Brookfield Enthusiast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brookfield Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live in Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_of_In__pc</picklist>
+            <values>
+                <fullName>Ann Arundel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cedar Park %2F Leander</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central %26 East Austin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dripping Springs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fairfax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frederick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgetown %2F Liberty Hill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakeway %2F Bee Cave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loudoun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montgomery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince William</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Marcos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sussex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talbot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Sales_Assistants__pc</picklist>
+            <values>
+                <fullName>Alexis Hall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cathy Chadwick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandler Meadows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deborah Powell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diane Tidwell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gina Iaccino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jill Brodsky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Melissa Stein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paige Kamel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rauly Williams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sue Walker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tonya McKim</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_History_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_List_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Community_Picklist_Test__pc</picklist>
+            <values>
+                <fullName>Test_Marketing_Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_currently_own_or_rent__pc</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Own</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Household__pc</picklist>
+            <values>
+                <fullName>%24100%2C000 - %24149%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24150%2C000 - %24199%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24200%2C000 - %24299%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24399%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000 - %24499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %2474%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 Plus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2475%2C000 - %2499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under %2450%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_long_have_you_been_house_hunting__pc</picklist>
+            <values>
+                <fullName>1-3 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2B Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 1 Month</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Channel__c</picklist>
+            <values>
+                <fullName>Event Registration%2FImport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MyTime Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Type__c</picklist>
+            <values>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contest Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Realtor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Number_of_Children_in_Home__pc</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pet_Number__pc</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>more than 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pet_Type__pc</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repeat_Buyer__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Agent_s_Working__pc</picklist>
+            <values>
+                <fullName>Aleks Korowski</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amy Franks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Cole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Angie Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belinda Shuler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Blair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colin Sexton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Matthys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dori Conway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dustin Compton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>James Haugen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Janice Wunning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jesse Miller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joelle Hogg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kendra Johnson</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kevin Bendy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lara Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linda Lahrman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lou Niemeyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marc Bodley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Matt Schroeder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michael Wagner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nichole Knight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Randy Perry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Richard Romeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie McKinney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steve Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sylvia Ingalsbe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tina Spencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vern Carlson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Offer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Quote Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote%2FSelection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__pc</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Offer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospecting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Quote Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote%2FSelection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Timeframe_to_move_in__pc</picklist>
+            <values>
+                <fullName>1-2 Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2B Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6-12 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Timeframe_to_purchase__pc</picklist>
+            <values>
+                <fullName>1-2 Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2B Years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6-12 Months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Brookfield_website_during_search__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_is_your_price_range__pc</picklist>
+            <values>
+                <fullName>%241%2C000%2C000 - %241%2C999%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24299%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24300%2C000 - %24349%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24350%2C000 - %24399%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24400%2C000 - %24499%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 - %24599%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24600%2C000 - %24699%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24700%2C000 - %24849%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24850%2C000 - %24999%2C999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over %242%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>under %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Which_describes_your_household__pc</picklist>
+            <values>
+                <fullName>Adult with Elderly Parent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple planning for Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple with Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couple without Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Empty Nester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-generational family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siblings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single with Children</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unrelated Adults</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>
