@@ -1,3 +1,0 @@
-<aura:component extends="c:NewstarBaseAuraWrapper" implements="flexipage:availableForAllPageTypes">
-    <c:lwcNewstarSyncJobManager  oninteropactioncompleted="{!c.handleActionCompleted}" />
-</aura:component>

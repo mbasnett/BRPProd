@@ -1,3 +1,0 @@
-<aura:component extends="c:NewstarQuickActionBaseAuraWrapper" implements="lightning:actionOverride">
-    <c:lwcNewstarCobuyerQuickCreate recordId="{!v.recordId}" oninteropactioncompleted="{!c.handleActionCompleted}" />
-</aura:component>

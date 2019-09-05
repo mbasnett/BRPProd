@@ -1,3 +1,0 @@
-<aura:component implements="force:lightningQuickAction,force:hasRecordId">
-        <c:lwcNewstarContract recordId="{!v.recordId}" oninteropactioncompleted="{!c.handleActionCompleted}" />
-</aura:component>
