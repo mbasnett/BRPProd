@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Walk-in</fullName>
+        <default>false</default>
+        <label>Walk-in</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone Inquiry</fullName>
+        <default>false</default>
+        <label>Phone Inquiry - Onsite</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone Inquiry - Online</fullName>
+        <default>false</default>
+        <label>Phone Inquiry - Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Online</fullName>
+        <default>false</default>
+        <label>Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Registration/Import</fullName>
+        <default>false</default>
+        <label>Event Registration/Import</label>
+    </customValue>
+    <customValue>
+        <fullName>MyTime Tour</fullName>
+        <default>false</default>
+        <label>MyTime Tour</label>
+    </customValue>
+    <masterLabel>Lead Channel</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

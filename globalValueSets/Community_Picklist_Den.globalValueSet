@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Barefoot Lakes</fullName>
+        <default>false</default>
+        <label>Barefoot Lakes</label>
+    </customValue>
+    <customValue>
+        <fullName>Brighton Crossings</fullName>
+        <default>false</default>
+        <label>Brighton Crossings</label>
+    </customValue>
+    <customValue>
+        <fullName>Midtown</fullName>
+        <default>false</default>
+        <label>Midtown</label>
+    </customValue>
+    <customValue>
+        <fullName>Solterra</fullName>
+        <default>false</default>
+        <label>Solterra</label>
+    </customValue>
+    <customValue>
+        <fullName>Sterling Rnach</fullName>
+        <default>false</default>
+        <label>Sterling Rnach</label>
+    </customValue>
+    <customValue>
+        <fullName>The Preserve</fullName>
+        <default>false</default>
+        <label>The Preserve</label>
+    </customValue>
+    <customValue>
+        <fullName>The Village</fullName>
+        <default>false</default>
+        <label>The Village</label>
+    </customValue>
+    <customValue>
+        <fullName>Denver 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Denver 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Denver 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Denver 2</label>
+    </customValue>
+    <masterLabel>Community Picklist Den</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

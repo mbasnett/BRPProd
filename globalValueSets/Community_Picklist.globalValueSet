@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Admirals Square</fullName>
+        <default>false</default>
+        <label>Admirals Square</label>
+    </customValue>
+    <customValue>
+        <fullName>Avendale</fullName>
+        <default>false</default>
+        <label>Avendale</label>
+    </customValue>
+    <customValue>
+        <fullName>Bluffs at Sleeter Lake</fullName>
+        <default>false</default>
+        <label>Bluffs at Sleeter Lake</label>
+    </customValue>
+    <customValue>
+        <fullName>Bradford&apos;s Landing</fullName>
+        <default>false</default>
+        <label>Bradford&apos;s Landing</label>
+    </customValue>
+    <customValue>
+        <fullName>Easton Village</fullName>
+        <default>false</default>
+        <label>Easton Village</label>
+    </customValue>
+    <customValue>
+        <fullName>Heritage Shores</fullName>
+        <default>false</default>
+        <label>Heritage Shores</label>
+    </customValue>
+    <customValue>
+        <fullName>Liberty</fullName>
+        <default>false</default>
+        <label>Liberty</label>
+    </customValue>
+    <customValue>
+        <fullName>Mayfair</fullName>
+        <default>false</default>
+        <label>Mayfair</label>
+    </customValue>
+    <customValue>
+        <fullName>Oakview Village</fullName>
+        <default>false</default>
+        <label>Oakview Village</label>
+    </customValue>
+    <customValue>
+        <fullName>Potomac Shores</fullName>
+        <default>false</default>
+        <label>Potomac Shores</label>
+    </customValue>
+    <customValue>
+        <fullName>Ridgeview</fullName>
+        <default>false</default>
+        <label>Ridgeview</label>
+    </customValue>
+    <customValue>
+        <fullName>Snowden Bridge Single Family</fullName>
+        <default>false</default>
+        <label>Snowden Bridge Single Family</label>
+    </customValue>
+    <customValue>
+        <fullName>Snowden bridge Townhomes</fullName>
+        <default>false</default>
+        <label>Snowden bridge Townhomes</label>
+    </customValue>
+    <customValue>
+        <fullName>Travilah Station</fullName>
+        <default>false</default>
+        <label>Travilah Station</label>
+    </customValue>
+    <customValue>
+        <fullName>Waterford Manor</fullName>
+        <default>false</default>
+        <label>Waterford Manor</label>
+    </customValue>
+    <masterLabel>Community Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

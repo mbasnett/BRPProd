@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Primary Buyer</fullName>
+        <default>false</default>
+        <label>Primary Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cobuyer</fullName>
+        <default>false</default>
+        <label>Cobuyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relative</fullName>
+        <default>false</default>
+        <label>Relative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Friend</fullName>
+        <default>false</default>
+        <label>Friend</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Realtor</fullName>
+        <default>false</default>
+        <label>Realtor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>
