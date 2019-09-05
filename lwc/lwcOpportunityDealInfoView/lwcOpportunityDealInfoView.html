@@ -1,0 +1,25 @@
+<template>
+    <lightning-record-view-form record-id={recordId} object-api-name="Opportunity" onloadeddata={handleRecordLoaded}>
+
+        <!-- notes -->
+        <c-lwc-content-section title="Deal Notes">
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-output-field field-name="Deal_Notes__c"></lightning-output-field>
+                </div>
+
+            </div>
+        </c-lwc-content-section>
+
+        <!-- stipulations -->
+        <c-lwc-content-section title="Deal Stipulations">
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-output-field field-name="Deal_Stipulations__c"></lightning-output-field>
+                </div>
+
+            </div>
+        </c-lwc-content-section>
+
+    </lightning-record-view-form>
+</template>

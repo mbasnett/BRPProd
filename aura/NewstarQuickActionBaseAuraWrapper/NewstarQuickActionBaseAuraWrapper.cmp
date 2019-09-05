@@ -1,0 +1,5 @@
+<aura:component 
+    implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForRecordHome"
+    extensible="true" abstract="true">
+        {!v.body}
+</aura:component>

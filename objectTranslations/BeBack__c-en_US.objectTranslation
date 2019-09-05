@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Be Back --></label>
+        <name>Is_Be_Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes Added by --></label>
+        <name>Notes_Added_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Prospect Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entry Date --></label>
+        <name>Visit_Date__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Prospect Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prospect Notes</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>BeBack Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

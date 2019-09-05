@@ -1,0 +1,40 @@
+<template>
+    <div if:true={objectInfo.data} class="slds-m-around_medium">
+        <lightning-record-edit-form object-api-name={objectApiName} record-type-id={recordTypeId}
+            onsubmit={handleFormSubmitted} onsuccess={handleCobuyerCreated}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2 slds-p-right_small">
+                    <lightning-input-field field-name={firstNameField}></lightning-input-field>
+
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-left_small">
+                    <lightning-input-field field-name={lastNameField}></lightning-input-field>
+                    <lightning-input-field field-name={oppField} class="slds-hide"></lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name={homeEmailField}></lightning-input-field>
+
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name={workEmailField}></lightning-input-field>
+
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name={homePhoneField}></lightning-input-field>
+
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name={workPhoneField}></lightning-input-field>
+
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name={mobilePhoneField}></lightning-input-field>
+
+                </div>
+            </div>
+            <lightning-button type="submit" variant="brand" label="Add Cobuyer" class="slds-m-top_large">
+            </lightning-button>
+        </lightning-record-edit-form>
+    </div>
+</template>

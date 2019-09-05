@@ -1,0 +1,177 @@
+<template>
+
+
+    <lightning-card title={componentTitle} icon-name="custom:custom26">
+        <lightning-button if:true={isSubdivisionSelected} label="Expand" slot="actions" onclick={handleExpandView}>
+        </lightning-button>
+        <div class="slds-p-horizontal_small">
+            <div if:true={bannerSpecialOffer}
+                class="slds-grid slds-grid_vertical-align-center slds-p-around_small slds-theme_inverse">
+                <div class=" slds-col slds-size_1-of-12 slds-p-left_small">
+                    <lightning-icon icon-name="standard:thanks"></lightning-icon>
+                </div>
+
+                <div class="slds-col slds-size_11-of-12 slds-p-left_medium">
+                    <p class="banner-special-offer-text">{bannerSpecialOffer.name}*</p>
+                    <p class="banner-special-offer-disclaimer">
+                        <span if:true={bannerSpecialOffer.expiryDate}>
+                            *Expires:&nbsp;
+                            <lightning-formatted-date-time value={bannerSpecialOffer.expiryDate} month="short"
+                                day="2-digit"></lightning-formatted-date-time>
+
+                        </span>
+                        &nbsp;
+                        <span if:false={bannerSpecialOffer.expiryDate}>
+                            *
+                        </span>
+                        Conditions apply, see disclaimer for details.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item-list-container" if:false={isSubdivisionSelected}>
+                <div if:true={areSubdivisionsAvailable}>
+                    <div class="slds-grid slds-grid_vertical-align-center slds-p-around_small slds-theme_info">
+                        <div class=" slds-col slds-size_1-of-12">
+                            <lightning-icon icon-name="custom:custom74" variant="success"></lightning-icon>
+                        </div>
+
+                        <div class="slds-col slds-size_11-of-12 slds-p-left_small">
+                            <p>Let's get started with this Opportunity by selecting a project!</p>
+                        </div>
+                    </div>
+
+                    <lightning-datatable class="slds-m-top_small" hide-checkbox-column="true" key-field="id"
+                        data={availableSubdivisions} columns={subdivisionColumns} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </div>
+
+                <div if:false={areSubdivisionsAvailable}>
+                    <div
+                        class="slds-grid slds-grid_vertical-align-center slds-p-around_small slds-theme_shade slds-theme_alert-texture">
+                        <div class=" slds-col slds-size_1-of-12">
+                            <lightning-icon icon-name="utility:error" variant="error"></lightning-icon>
+                        </div>
+
+                        <div class="slds-col slds-size_11-of-12 slds-p-left_small">
+                            <p>There are no active projects available to select for this opportunity. Please
+                                contact your Sales Administrator.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <lightning-tabset if:true={isSubdivisionSelected}>
+                <lightning-tab if:true={areAlternateOpportunitiesPresent} label="Scenarios" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={alternateOpportunities}
+                        columns={alternateOpportunityColumns} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areModelsAvailable} label="Models" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={models} columns={modelColumns}
+                        onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areDirtLotsAvailable} label="Dirt Lots">
+                    <div onkeyup={handleSearchKeyup} class="tab-search-container">
+                        <lightning-input type="search" name="lot-search" placeholder="Search lot number or address...">
+                        </lightning-input>
+                    </div>
+                    <div class="item-list-container">
+                        <lightning-datatable hide-checkbox-column="true" key-field="id" data={dirtLots}
+                            columns={dirtLotColumns} onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </div>
+
+                </lightning-tab>
+                <lightning-tab if:true={areInventoryLotsAvailable} label="Quick Move-ins" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={inventoryLots}
+                        columns={inventoryLotColumns} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areSpecialOffersAvailable} label="Special Offers" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={specialOffers}
+                        columns={specialOfferColumns}>
+                    </lightning-datatable>
+                </lightning-tab>
+
+            </lightning-tabset>
+        </div>
+        <p slot="footer"></p>
+    </lightning-card>
+
+    <template if:true={isExpandedViewModalOpen}>
+
+        <c-lwc-newstar-modal name="expanded-view" title={componentTitle} onclosemodal={handleCloseModal}>
+            <div if:true={bannerSpecialOffer}
+                class="slds-grid slds-grid_vertical-align-center slds-p-around_small slds-theme_inverse">
+                <div class=" slds-col slds-size_1-of-12 slds-p-left_small">
+                    <lightning-icon icon-name="standard:thanks"></lightning-icon>
+                </div>
+
+                <div class="slds-col slds-size_11-of-12 slds-p-left_medium">
+                    <p class="banner-special-offer-text">{bannerSpecialOffer.name}*</p>
+                    <p class="banner-special-offer-disclaimer">
+                        <span if:true={bannerSpecialOffer.expiryDate}>
+                            *Expires:&nbsp;
+                            <lightning-formatted-date-time value={bannerSpecialOffer.expiryDate} month="short"
+                                day="2-digit"></lightning-formatted-date-time>
+
+                        </span>
+                        &nbsp;
+                        <span if:false={bannerSpecialOffer.expiryDate}>
+                            *
+                        </span>
+                        Conditions apply, see disclaimer for details.
+                    </p>
+                </div>
+            </div>
+            <lightning-tabset>
+                <lightning-tab if:true={areAlternateOpportunitiesPresent} label="Scenarios" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={alternateOpportunities}
+                        columns={alternateOpportunityColumns} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areModelsAvailable} label="Models" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={models}
+                        columns={modelColumnsExpanded} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areDirtLotsAvailable} label="Dirt Lots">
+                    <div onkeyup={handleSearchKeyup} class="tab-search-container">
+                        <lightning-input type="search" name="lot-search" placeholder="Search lot number or address...">
+                        </lightning-input>
+                    </div>
+                    <div class="item-list-container">
+                        <lightning-datatable hide-checkbox-column="true" key-field="id" data={dirtLots}
+                            columns={dirtLotColumnsExpanded} onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </div>
+                </lightning-tab>
+                <lightning-tab if:true={areInventoryLotsAvailable} label="Quick Move-ins" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={inventoryLots}
+                        columns={inventoryLotColumns} onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={areSpecialOffersAvailable} label="Special Offers" class="item-list-container">
+                    <lightning-datatable hide-checkbox-column="true" key-field="id" data={specialOffers}
+                        columns={specialOfferColumnsExpanded}>
+                    </lightning-datatable>
+                </lightning-tab>
+                <lightning-tab if:true={isSitemapAvailable} label="Site map">
+                    <iframe style="border:0; width:100%; height:300px;" src={sitemapUrl}>
+                    </iframe>
+                </lightning-tab>
+
+
+            </lightning-tabset>
+        </c-lwc-newstar-modal>
+
+
+
+
+    </template>
+
+</template>

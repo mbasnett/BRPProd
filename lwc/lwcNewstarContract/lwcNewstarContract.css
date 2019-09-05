@@ -1,0 +1,27 @@
+.ns-lwc-spinner::after {
+    position: absolute;
+    content: 'Processing your request';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+    
+}
+
+.ns-contract-label {
+    font-weight:700;
+}
+
+.ns-deal-info-container {
+    border-top: 1px solid #dadada;
+}
+
+.ns-customer-info-container {
+    border-bottom: 1px solid #dadada;
+}
+
+.ns-logo {
+    width:170px;
+    display:block;
+    margin-right:20px;
+}

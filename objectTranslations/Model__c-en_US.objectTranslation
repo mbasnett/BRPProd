@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Baths --></label>
+        <name>Baths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beds --></label>
+        <name>Beds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floors --></label>
+        <name>Floors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Garages --></label>
+        <name>Garages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Baths --></label>
+        <name>Half_Baths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info --></label>
+        <name>Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newstar ID --></label>
+        <name>Newstar_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newstar Sync Status --></label>
+        <name>Newstar_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sq. Ft. --></label>
+        <name>Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subdivision --></label>
+        <name>Subdivision__c</name>
+        <relationshipLabel><!-- Models --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Model</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Models</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Model Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Home Info --></label>
+            <section>Home Info</section>
+        </sections>
+        <sections>
+            <label><!-- NEWSTAR Sync --></label>
+            <section>NEWSTAR Sync</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

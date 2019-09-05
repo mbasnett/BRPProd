@@ -1,0 +1,4 @@
+<aura:component abstract="true" extensible="true" 
+    implements="force:hasRecordId">
+    {!v.body}
+</aura:component>

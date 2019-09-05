@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Newstar_Log_Record__c.Event_Context__c</field>
+    </columns>
+    <columns>
+        <field>Newstar_Log_Record__c.Primary_Object_ID__c</field>
+    </columns>
+    <columns>
+        <field>Newstar_Log_Record__c.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>Newstar_Log_Record__c.Event_Date__c</field>
+    </columns>
+    <columns>
+        <field>Newstar_Log_Record__c.Trace_Info__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Newstar_Log_Record__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Failure</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NEWSTAR Integration Failures</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Newstar_Log_Record__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Newstar_Log_Record__c.Event_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Newstar_Log_Record__c.Event_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

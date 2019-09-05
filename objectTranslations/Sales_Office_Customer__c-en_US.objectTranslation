@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- The selected account must be of Customer record type. --></errorMessage>
+        </lookupFilter>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sales Office Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Newstar ID --></label>
+        <name>Newstar_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newstar Sync Status --></label>
+        <name>Newstar_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+        <relationshipLabel><!-- Sales Office Customers --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Office Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Office Customers</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Should this Community be included in reports? --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other groups can Read? --></label>
+        <name>Other_groups_can_Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sales Process Type --></label>
+        <name>Sales_Process_Type__c</name>
+        <picklistValues>
+            <masterLabel>Direct offer</masterLabel>
+            <translation><!-- Direct offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lot reservation</masterLabel>
+            <translation><!-- Lot reservation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Status --></label>
+        <name>Sales_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closeout</masterLabel>
+            <translation><!-- Closeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coming Soon</masterLabel>
+            <translation><!-- Coming Soon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Opening</masterLabel>
+            <translation><!-- Grand Opening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Available</masterLabel>
+            <translation><!-- Not Yet Available --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_office__c</name>
+        <relationshipLabel><!-- Marketing Communities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SiteCoreID --></label>
+        <name>SiteCoreID__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+        <picklistValues>
+            <masterLabel>Colorado</masterLabel>
+            <translation><!-- Colorado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denver</masterLabel>
+            <translation><!-- Denver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>District of Columbia</masterLabel>
+            <translation><!-- District of Columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missouri</masterLabel>
+            <translation><!-- Missouri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ontario</masterLabel>
+            <translation><!-- Ontario --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Link --></label>
+        <name>Web_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Community</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Communities</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Marketing Community Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
