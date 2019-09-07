@@ -35,9 +35,6 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>IsActive</fullName>
-    </fields>
-    <fields>
         <fullName>Pricebook2Id</fullName>
         <type>Lookup</type>
     </fields>
@@ -52,10 +49,16 @@
         <fullName>StandardPrice</fullName>
     </fields>
     <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>UnitPrice</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>UseStandardPrice</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>

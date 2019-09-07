@@ -53,7 +53,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>visibility</name>
-                <value>[&quot;edit&quot;,&quot;view&quot;]</value>
+                <value>edit,view</value>
             </componentInstanceProperties>
             <componentName>clients:tab</componentName>
         </componentInstances>
@@ -76,7 +76,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>visibility</name>
-                <value>[&quot;edit&quot;,&quot;view&quot;]</value>
+                <value>edit,view</value>
             </componentInstanceProperties>
             <componentName>clients:tab</componentName>
         </componentInstances>
