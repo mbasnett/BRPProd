@@ -19,6 +19,8 @@
     <enableNewChartsEngine>true</enableNewChartsEngine>
     <enableRemoveFooterForRepDisplay>false</enableRemoveFooterForRepDisplay>
     <enableRemoveFooterFromRepExp>true</enableRemoveFooterFromRepExp>
+    <enableReportFieldToFieldPref>false</enableReportFieldToFieldPref>
+    <enableReportUniqueRowCountPref>false</enableReportUniqueRowCountPref>
     <enableSFXJoinedReportsEnable>false</enableSFXJoinedReportsEnable>
     <enableUseOldChartsLookAndFeel>false</enableUseOldChartsLookAndFeel>
     <enableWaveReplication>false</enableWaveReplication>
