@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AnalyticsSettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <alwaysGenPreviews>false</alwaysGenPreviews>
-    <canAccessAnalyticsViaAPI>false</canAccessAnalyticsViaAPI>
-    <canAnnotateDashboards>false</canAnnotateDashboards>
-    <canEnableSavedView>false</canEnableSavedView>
-    <canExploreDataConversationally>false</canExploreDataConversationally>
-    <canShareAppsWithCommunities>false</canShareAppsWithCommunities>
-    <canViewThumbnailAssets>false</canViewThumbnailAssets>
     <enableAutoCompleteCombo>true</enableAutoCompleteCombo>
     <enableDashboardComponentSnapshot>true</enableDashboardComponentSnapshot>
     <enableDashboardFlexiTable>true</enableDashboardFlexiTable>
