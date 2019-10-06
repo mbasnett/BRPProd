@@ -5,6 +5,5 @@
     <enableEnhancedPermsetMgmt>false</enableEnhancedPermsetMgmt>
     <enableEnhancedProfileMgmt>false</enableEnhancedProfileMgmt>
     <enableNewProfileUI>false</enableNewProfileUI>
-    <enableScrambleUserData>false</enableScrambleUserData>
     <enableUserSelfDeactivate>false</enableUserSelfDeactivate>
 </UserManagementSettings>

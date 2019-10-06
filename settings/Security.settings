@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <enableAdminLoginAsAnyUser>true</enableAdminLoginAsAnyUser>
-    <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
-    <isTLSv12Required>false</isTLSv12Required>
-    <isTLSv12RequiredCommunities>false</isTLSv12RequiredCommunities>
     <networkAccess>
         <ipRanges>
             <description>Brookfield Washington Main Office</description>
